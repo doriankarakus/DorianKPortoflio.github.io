@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 20px;
+            padding: 20px; /* Add padding to the whole container */
+        }
+        .profile-image {
+            max-width: 300px;
+            border: 2px solid #000; /* Add a border around the image */
+            margin-left: -20px; /* Move the image a little bit to the left */
+        }
+        #about {
+            flex: 1; /* Allow the about section to take available space */
+            max-width: 700px; /* Set a max width for the about section */
+        }
+        #about div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <header id="home">
+        <h1>Dorian S. Karakus</h1>
+        <p>BS Computer Science</p>
+    </header>
+
+    <div class="container">
+        <img src="image0.jpeg" alt="Dorian S. Karakus" class="profile-image">
+        <section id="about">
+            <div>
+                <h2>About Me</h2>
+                <p>Hi, I'm Dorian, a motivated Computer Science graduate from the University of Florida. With a solid foundation in Java, C++, and various other technologies, I have contributed to numerous projects both in academic and personal capacities. I previously worked as an intern at a medical engineering company in Gainesville, Convergent Engineering, and am currently seeking new opportunities in the software engineering field. Outside of work, I enjoy developing games/apps as a hobby, exercising at the gym, watching sports, and hanging out with friends.</p>
+                <p>
+                    <a href="Transcript.pdf.docx" download class="download-button">Download University Transcript</a>
+                </p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>© 2023 Dorian S. Karakus. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
